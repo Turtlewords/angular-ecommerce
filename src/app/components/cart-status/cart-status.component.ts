@@ -16,11 +16,11 @@ export class CartStatusComponent implements OnInit{
   };
 
   ngOnInit(): void {
-    this.updatedCartStatus();
+    this.updateCartStatus();
   }
 
 
-  updatedCartStatus() {
+  updateCartStatus() {
     this.cartService.totalPrice.subscribe(
       data => this.totalPrice = data
     );
